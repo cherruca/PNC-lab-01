@@ -24,6 +24,17 @@ public class Laboratorio01Application {
 						+ " | Categoría: " + material.getCategory().getName()
 						+ " | Precio: " + material.getPrice() + " Rupias"
 					));
+
+			System.out.println("=== MÁS CARO ===");
+			System.out.println(materialService.getMostExpensive().getName() + ", "
+			+ materialService.getMostExpensive().getPrice() + " Rupias");
+
+			System.out.println("=== LEGENDARIOS ===");
+			materialService.getLegendaries().forEach(material ->
+					System.out.println("[HYRULE-DB] Nombre: " + material.getName()
+							+ " | Categoría: " + material.getCategory().getName()
+							+ " | Precio: " + material.getPrice() + " Rupias"
+					));
 		};
 	}
 

@@ -14,7 +14,7 @@ public class Material {
     private String name;
     private Category category;
     private Effect effect;
-    private float price;
+    private Double price;
     private String location;
     private Rarity rarity;
 }

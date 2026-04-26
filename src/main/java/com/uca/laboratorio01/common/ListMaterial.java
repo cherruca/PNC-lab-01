@@ -23,21 +23,21 @@ public class ListMaterial {
                 .id(1)
                 .name("Ámbar rojo")
                 .category(categories.findById(2))
-                .price(30)
+                .price(30.0)
                 .build());
 
         this.materials.add(Material.builder()
                 .id(2)
                 .name("Ala de Keese")
                 .category(categories.findById(3))
-                .price(15)
+                .price(15.4)
                 .build());
 
         this.materials.add(Material.builder()
                 .id(3)
                 .name("Pimienta ardiente")
                 .category(categories.findById(4))
-                .price(10)
+                .price(10.1)
                 .build());
 
         this.materials.add(Material.builder()
@@ -45,7 +45,7 @@ public class ListMaterial {
                 .name("Manzana Hyliana")
                 .category(categories.findById(1L)) // Comida
                 .effect(effects.findEffectById(5L)) // Corazones
-                .price(4)
+                .price(4.0)
                 .location("Bosques de Hyrule")
                 .rarity(rarities.findRarityById(1L)) // Común
                 .build());
@@ -55,7 +55,7 @@ public class ListMaterial {
                 .name("Ámbar")
                 .category(categories.findById(2L)) // Mineral
                 .effect(effects.findEffectById(2L)) // Defensa
-                .price(30)
+                .price(30.1)
                 .location("Montañas de Eldin")
                 .rarity(rarities.findRarityById(2L)) // Poco Común
                 .build());
@@ -65,7 +65,7 @@ public class ListMaterial {
                 .name("Cola de Lizalfos")
                 .category(categories.findById(3L)) // Parte de Monstruo
                 .effect(effects.findEffectById(1L)) // Ataque
-                .price(25)
+                .price(25.4)
                 .location("Pantanos de Lanayru")
                 .rarity(rarities.findRarityById(2L)) // Poco Común
                 .build());
@@ -75,7 +75,7 @@ public class ListMaterial {
                 .name("Flor Sigilosa")
                 .category(categories.findById(4L)) // Planta
                 .effect(effects.findEffectById(3L)) // Sigilo
-                .price(12)
+                .price(12.8)
                 .location("Bosque Kolog")
                 .rarity(rarities.findRarityById(3L)) // Raro
                 .build());
@@ -85,7 +85,7 @@ public class ListMaterial {
                 .name("Trufa Vivaz")
                 .category(categories.findById(1L)) // Comida
                 .effect(effects.findEffectById(4L)) // Estamina
-                .price(60)
+                .price(60.67)
                 .location("Cuevas de Hyrule")
                 .rarity(rarities.findRarityById(4L)) // Legendario
                 .build());
