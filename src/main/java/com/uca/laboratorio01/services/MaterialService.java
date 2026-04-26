@@ -35,7 +35,9 @@ public class MaterialService {
     public List<Material> getLegendaries() {
         return materialRepository.findAll()
                 .stream()
-                .filter(material -> material.getRarity().getId().equals(4L))
+                .filter(material ->
+                        material.getRarity() != null &&
+                        material.getRarity().getId() == 4L)
                 .toList();
     }
 }

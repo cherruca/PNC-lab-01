@@ -23,12 +23,12 @@ public class ListRarity {
                 .build());
 
         this.rarities.add(Rarity.builder()
-                .id(1L)
+                .id(3L)
                 .name("Raro")
                 .build());
 
         this.rarities.add(Rarity.builder()
-                .id(1L)
+                .id(4L)
                 .name("Legendario")
                 .build());
     }
