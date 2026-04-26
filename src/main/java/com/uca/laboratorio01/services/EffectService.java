@@ -14,4 +14,8 @@ public class EffectService {
     public List<Effect> getAllEffects() {
         return effectRepository.findAll();
     }
+
+    public Effect findById(long id) {
+        return effectRepository.findById(id);
+    }
 }

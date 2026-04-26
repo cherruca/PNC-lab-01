@@ -14,4 +14,8 @@ public class RarityService {
     public List<Rarity> getAllRarities() {
         return rarityRepository.findAll();
     }
+
+    public Rarity getRarityById(long id) {
+        return rarityRepository.getRarityById(id);
+    }
 }

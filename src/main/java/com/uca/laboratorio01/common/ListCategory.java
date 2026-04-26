@@ -1,9 +1,12 @@
 package com.uca.laboratorio01.common;
 
 import com.uca.laboratorio01.domain.model.Category;
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class ListCategory {
     private final List<Category> categories;
 
@@ -11,22 +14,22 @@ public class ListCategory {
         this.categories = new ArrayList<>();
 
         this.categories.add(Category.builder()
-                .id(1)
+                .id(1L)
                 .name("Comida")
                 .build());
 
         this.categories.add(Category.builder()
-                .id(2)
+                .id(2L)
                 .name("Mineral")
                 .build());
 
         this.categories.add(Category.builder()
-                .id(3)
+                .id(3L)
                 .name("Parte de Monstruo")
                 .build());
 
         this.categories.add(Category.builder()
-                .id(4)
+                .id(4L)
                 .name("Planta")
                 .build());
     }
@@ -36,9 +39,9 @@ public class ListCategory {
     }
 
     public Category getCategoryById(long id) {
-        Category category1 = categories.stream()
-                .filter(category -> category.getId().equals(id))
-                .findFirst().orElse(null);
-        return category1;
+        return categories.stream().filter(category -> category.getId()
+                .equals(id))
+                .findFirst()
+                .orElse(null);
     }
 }

@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class Effect {
-    private long id;
+    private Long id;
     private String name;
 }
