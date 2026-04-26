@@ -35,6 +35,12 @@ public class Laboratorio01Application {
 							+ " | Categoría: " + material.getCategory().getName()
 							+ " | Precio: " + material.getPrice() + " Rupias"
 					));
+
+			System.out.println("=== UBICACIONES ===");
+			materialService.getAllLocations().forEach(location ->
+					System.out.println(
+						"Ubicación: " + location
+					));
 		};
 	}
 

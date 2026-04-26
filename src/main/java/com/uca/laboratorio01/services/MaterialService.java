@@ -40,4 +40,13 @@ public class MaterialService {
                         material.getRarity().getId() == 4L)
                 .toList();
     }
+
+    // Obtener una lista de todas las ubicaciones registradas sin repetir ninguna, usando distinct.
+    public List<String> getAllLocations() {
+        return materialRepository.findAll()
+                .stream()
+                .map(Material::getLocation)
+                .distinct()
+                .toList();
+    }
 }
