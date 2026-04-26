@@ -15,7 +15,7 @@ public class EffectService {
         return effectRepository.findAll();
     }
 
-    public Effect findById(long id) {
+    public Effect findEffectById(long id) {
         return effectRepository.findById(id);
     }
 }

@@ -15,7 +15,7 @@ public class RarityService {
         return rarityRepository.findAll();
     }
 
-    public Rarity getRarityById(long id) {
+    public Rarity findRarityById(long id) {
         return rarityRepository.getRarityById(id);
     }
 }
